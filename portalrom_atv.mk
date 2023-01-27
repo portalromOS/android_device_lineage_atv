@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2022 The LineageOS Project
+# Copyright (C) 2023 The PortalRom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,11 +19,11 @@ include $(LOCAL_PATH)/system_prop.mk
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    device/lineage/atv/overlay
+    device/portalrom/atv/overlay
 
 # Init files
 PRODUCT_PACKAGES += \
-    init.lineage.atv.rc
+    init.portalrom.atv.rc
 
 # Dynalink 4k
 PRODUCT_PACKAGES += \
@@ -74,7 +74,7 @@ PRODUCT_PACKAGES += \
 
 # priv-app permissions
 PRODUCT_COPY_FILES +=\
-    device/lineage/atv/permissions/privapp-permissions-lineage-atv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lineage-atv.xml
+    device/portalrom/atv/permissions/privapp-permissions-portalrom-atv.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-portalrom-atv.xml
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
